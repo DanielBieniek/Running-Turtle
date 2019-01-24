@@ -1,7 +1,7 @@
 ## Running Turtle  
 **Author:** Daniel Bieniek  
 **Not Finished**
-**[Download project and report](https://github.com/DanielBieniek/Running-Turtle/releases)**
+**[Download project](https://github.com/DanielBieniek/Running-Turtle/releases)**
 
 **Screenshots**  
 ![Game](https://i.imgur.com/hOew5Lx.png)
