@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<link rel="stylesheet" href="public/style.css">
+	<link rel="shortcut icon" href="public/img/favicon.png">
+	<meta charset="UTF-8">
+	<title>Żółwiki</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+</head>
+<body>
+	<div id="wrapper" class="unselectable">
+		<div id="overlay"><div id="startButton">START</div></div>
+
+		<div id="playerColor"></div>
+
+		<div id="someSpace"></div>
+		<div class="pebbleBox" id="pb9"><div class="pebble" id="p9"></div></div>
+		<div class="pebbleBox" id="pb8"><div class="pebble" id="p8"></div></div>
+		<div class="pebbleBox" id="pb7"><div class="pebble" id="p7"></div></div>
+		<div class="pebbleBox" id="pb6"><div class="pebble" id="p6"></div></div>
+		<div class="pebbleBox" id="pb5"><div class="pebble" id="p5"></div></div>
+		<div class="pebbleBox" id="pb4"><div class="pebble" id="p4"></div></div>
+		<div class="pebbleBox" id="pb3"><div class="pebble" id="p3"></div></div>
+		<div class="pebbleBox" id="pb2"><div class="pebble" id="p2"></div></div>
+		<div class="pebbleBox" id="pb1"><div class="pebble" id="p1"></div></div>
+		<div class="pebbleBox" id="pb0"><div class="pebble" id="p0"></div></div>
+		<div id="someSpace"></div>
+
+		<div id="cardTable">
+			<div class="card hiddenCard" id="c0"></div>
+			<div class="card hiddenCard" id="c1"></div>
+			<div class="card hiddenCard" id="c2"></div>
+			<div class="card hiddenCard" id="c3"></div>
+			<div class="card hiddenCard" id="c4"></div>
+		</div>
+		
+		<div id="throwAway"></div>
+
+	</div>
+	<script src="public/js/main.js"></script>
+</body>
+</html>

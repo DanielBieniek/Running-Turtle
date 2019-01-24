@@ -1,0 +1,215 @@
+.unselectable {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor:default;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	font-family: Helvetica, sans-serif;
+	color:silver;
+	text-align: center;
+	counter-reset: item 11;
+}
+#wrapper {
+	width: 970px;
+	height: 1400px;
+	margin: 0 auto;
+	background-color: #234a2b;
+	background-image: url("img/leaf.png");
+	overflow: hidden;
+}
+#overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color:rgba(0,0,0,0.6);
+	z-index: 99;
+
+	/*display: none;*/
+}
+#startButton {
+	height:200px;
+	width:300px;
+	margin-top:600px;
+	margin-left:335px;
+	background-color:#ddd;
+	color:black;
+	font-size: 80px;
+	line-height: 200px;
+	border:5px solid black;
+	cursor: pointer;
+}
+#startButton:hover {
+	background-color:#fff;
+}
+#playerColor {
+	width: 100%;
+	height: 50px;
+	background: #000000;
+	background-image: url("img/brush.png");
+	box-shadow:  0px -30px 40px -20px rgba(0,0,0,0.9) inset;
+	cursor: pointer;
+	border-bottom: 1px solid black;
+}
+.hidePlayer {
+	background-color: #ffffff !important;
+}
+#someSpace {
+	box-sizing: border-box;
+	width: 100%;
+	height: 60px;
+}
+.pebbleBox {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100px;
+}
+.pebble {
+	box-sizing: border-box;
+	display: inline-flex;
+	width: 400px;
+	height: 80px;
+	background-color: #8f8f8f;
+	background-image: url("img/buried.png");
+	margin: 0 100px;
+    border-radius: 35px;
+    color:black;
+	font-size:50px;
+	text-align: center;
+	line-height: 80px;
+	box-shadow:  20px 10px 30px rgba(0,0,0,0.8);
+}
+.pebble::after {
+	counter-increment: item -1;
+	content: counter(item)" ";
+	color:#333;
+	font-size:50px;
+	line-height: 80px;
+	position: absolute;
+	margin-left:185px;
+}
+#pb9 {
+	padding-left: 100px;
+}
+#pb8 {
+	padding-right: 100px;
+}
+#pb7 {
+	padding-right: 200px;
+}
+#pb6 {
+	padding-left: 0px;
+}
+#pb5 {
+	padding-left: 200px;
+}
+#pb4 {
+	padding-left: 160px;
+}
+#pb3 {
+	padding-left: 120px;
+}
+#pb2 {
+	padding-right: 100px;
+}
+#pb1 {
+	padding-right: 120px;
+}
+#pb0 {
+	padding-left: 180px;
+}
+#cardTable {
+	height: 240px;
+	width: 100%;
+	background-color: #5e3222;
+	background-image: url("img/wood.png");
+	border-top: 1px solid black;
+}
+#throwAway {
+	height: 205px;
+	width: 140px;
+	background: #000;
+	background-image: url("img/cardboard.png");
+	border-radius: 10px;
+	border:1px solid black;
+	font-size:100px;
+	text-shadow: 3px 3px #000;
+	line-height: 205px;
+	position: absolute;
+	top:930px;
+	margin-left:30px;
+	z-index: 2;
+}
+.card {
+	height: 205px;
+	width: 140px;
+	margin-top:30px;
+	background: #000;
+	background-image: url("img/cardboard.png");
+	border-radius: 10px;
+	border:1px solid black;
+	font-size:100px;
+	text-shadow: 3px 3px #000;
+	line-height: 205px;
+	display: inline-block;
+	cursor: pointer;
+}
+.card:hover {
+	border-radius: 5px;
+}
+.hiddenCard {
+	display: none !important;
+}
+.redCard {
+	background-color: #5c0300 !important;
+}
+.greenCard {
+	background-color: #003807 !important;
+}
+.blueCard {
+	background-color: #001494 !important;
+}
+.yellowCard {
+	background-color: #826200 !important;
+}
+.purpleCard {
+	background-color: #3a004d !important;
+}
+.rainbowCard {
+    background-color: #dddddd !important;
+	background: -moz-linear-gradient(-45deg, #873f3f 0%, #b9aa51 30%, #52833d 50%, #363c7c 75%, #75698f 100%) !important;
+	background: -webkit-linear-gradient(-45deg, #873f3f 0%,#b9aa51 30%,#52833d 50%,#363c7c 75%,#75698f 100%) !important;
+	background: linear-gradient(135deg, #873f3f 0%,#b9aa51 30%,#52833d 50%,#363c7c 75%,#75698f 100%) !important;
+}
+.pawn {
+	width:80px;
+	height: 80px;
+	border-radius: 38px;
+	background-color:white;
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	box-shadow:  0px 0px 50px 8px rgba(0,0,0,1) inset;
+	z-index: 2;
+}
+.pawn > .pawn {
+	margin-left:25px;
+}
+#redPawn {
+	background-color:red;
+}
+#greenPawn {
+	background-color:green;
+}
+#bluePawn {
+	background-color:blue;
+}
+#yellowPawn {
+	background-color:yellow;
+}
+#purplePawn {
+	background-color:purple;
+}
